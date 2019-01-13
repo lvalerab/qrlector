@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- JAVASCRIPT-->
+            <!-- Libreria jquery (3.3.1)-->
+            <script type="text/javascript" src="./js/libs/jquery/jquery.js"></script>
+            <!-- Librerias para el lector de códigos-->
+            <script type="text/javascript" src="./js/libs/jsqrcode/grid.js"></script>
+            <script type="text/javascript" src="./js/libs/jsqrcode/version.js"></script>
+            <script type="text/javascript" src="./js/libs/jsqrcode/detector.js"></script>
+            <script type="text/javascript" src="./js/libs/jsqrcode/formatinf.js"></script>
+            <script type="text/javascript" src="./js/libs/jsqrcode/errorlevel.js"></script>
+            <script type="text/javascript" src="./js/libs/jsqrcode/bitmat.js"></script>
+            <script type="text/javascript" src="./js/libs/jsqrcode/datablock.js"></script>
+            <script type="text/javascript" src="./js/libs/jsqrcode/bmparser.js"></script>
+            <script type="text/javascript" src="./js/libs/jsqrcode/datamask.js"></script>
+            <script type="text/javascript" src="./js/libs/jsqrcode/rsdecoder.js"></script>
+            <script type="text/javascript" src="./js/libs/jsqrcode/gf256poly.js"></script>
+            <script type="text/javascript" src="./js/libs/jsqrcode/gf256.js"></script>
+            <script type="text/javascript" src="./js/libs/jsqrcode/decoder.js"></script>
+            <script type="text/javascript" src="./js/libs/jsqrcode/qrcode.js"></script>
+            <script type="text/javascript" src="./js/libs/jsqrcode/findpat.js"></script>
+            <script type="text/javascript" src="./js/libs/jsqrcode/alignpat.js"></script>
+            <script type="text/javascript" src="./js/libs/jsqrcode/databr.js"></script>
+            <!--Libreria jsQR-->
+            <script type="text/javascript" src="./js/libs/jsQR/jsQR.js"></script>
+            <!--Libreria bootstrap-->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
+
+            <!--CSS-->
+            <!--Libreria bootstrap-->
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    </head>
+    <body>        
+        <div class="container">
+            <div class="alert alert-info">
+                <div class="row alert-heading">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10"><h2>Lector de c&oacute;digos QR</h2></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <video id="VisorVideo" controls autoplay style="height:180px; width:240px;"></video>
+                </div>
+                <div class="col-md-4">
+                    <canvas id="qr-canvas" width="180" height="240"></canvas>                    
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+        <div class="container alert alert-success">
+            <input type="text" id="TextBIDI" class="form-control">
+        </div>
+        <div class="container alert alert-warning">
+            <div class="alert-heading">LOG</div>
+            <div id="LineaLog">
+                
+            </div>
+        </div>
+    </body>
+    <!--Incluimos el js de la app-->
+    <script type="text/javascript" src="./js/app.js"></script>
+</html>
