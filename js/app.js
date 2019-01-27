@@ -8,7 +8,7 @@ var app=(function() {
         variables:{},
         setVariables:function(initVar) {
             //Variables por defecto
-            this.variables.constraintVideo={'video':true,'audio':false};
+            this.variables.constraintVideo={'video':{ facingMode: { exact: "environment" } },'audio':false};
             this.variables.Interval=100;
             this.variables.UsingJSQR=true;
             //Seteo de variables
