@@ -42,14 +42,16 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2"></div>
+                <div class="col-md-4 form-group">
+                    <label class="label label-success">C&aacute;mara</label>
+                    <select class="form-control" id="VideoSource"></select>
+                </div>
                 <div class="col-md-4">
                     <video id="VisorVideo" playsinline="true" controls autoplay style="height:180px; width:240px;"></video>
                 </div>
                 <div class="col-md-4">
                     <canvas id="qr-canvas" width="240" height="180"></canvas>                    
-                </div>
-                <div class="col-md-2"></div>
+                </div>                
             </div>
         </div>
         <div class="container alert alert-success">
